@@ -42,7 +42,7 @@ nombre = "Pepe"
 edad = 2
 print(f"Mi mascota es un {especie}, se llama {nombre} y tiene {edad} años.")
 
-# Ejercicio 6
+# Ejercicio 6 # nota: La maximo es 9
 exam1 = 6
 exam2 = 7
 exam3 = 9
