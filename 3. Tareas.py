@@ -27,6 +27,9 @@ edad1 = int(input("Ingrese la edad de la primera persona: "))
 mayor_edad = 18 >=         
 """
 
+# Ejercicio 5
+
+
 
 #Ejercicio 9
 print("\nBienvenido al programa de becas universitarias.")
