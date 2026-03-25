@@ -35,7 +35,7 @@ promedio = float(input("Ingrese la primera nota del estudiante: "))
 ingresos = float(input("Ingrese los ingresos mensuales del estudiante: "))
 reportes_disciplinarios = bool(input("¿El estudiante tiene reportes disciplinarios? (true/false): ").lower())
 
-if (promedio >= 8.5 and ingresos < 2000 and reportes_disciplinarios == False):
+if (promedio >= 8.5 and ingresos < 2000) and not reportes_disciplinarios:
     print("\nEl estudiante es elegible para la beca.")
 
 else:
