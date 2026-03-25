@@ -1,4 +1,5 @@
 # Ejercicio 1
+"""
 num = int(input("Ingrese el primer numero: "))
 if num % 2 == 0:
     print(f"El numero {num} es par")
@@ -20,3 +21,22 @@ elif num1 == num2:
 
 else:
         print("Error, ingrese un numero valido")  
+
+# Ejercicio 3
+edad1 = int(input("Ingrese la edad de la primera persona: "))
+mayor_edad = 18 >=         
+"""
+
+
+#Ejercicio 9
+print("\nBienvenido al programa de becas universitarias.")
+
+promedio = float(input("Ingrese la primera nota del estudiante: "))
+ingresos = float(input("Ingrese los ingresos mensuales del estudiante: "))
+reportes_disciplinarios = bool(input("¿El estudiante tiene reportes disciplinarios? (true/false): ").lower())
+
+if (promedio >= 8.5 and ingresos < 2000 and reportes_disciplinarios == False):
+    print("\nEl estudiante es elegible para la beca.")
+
+else:
+    print("\nEl estudiante no es elegible para la beca.")
