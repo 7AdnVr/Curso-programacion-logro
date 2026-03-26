@@ -41,5 +41,6 @@ anidacion = [
          ['Eve', 20, 1.60]
 ]
 
-ani2 =
+print(f'Lista de nombres: {nombres[0]}')
+print(f'Lista de nombres: {nombres[0]}')
 
