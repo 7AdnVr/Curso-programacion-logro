@@ -25,7 +25,10 @@ if decision1 == "hacha":
             print('\nEl guerrero respira con dificultad... te entrega información sobre los atacantes. Ahora tienes una decisión difícil')
             decision4 = input('Qué haces? MATARLO ⚔️  o PERDONARLO 🤝 ? >').lower()
 
-            if decision4 == "matarlo":
+            if decision4 == "perdonarlo":
+                print('\nDecides perdonarlo… pero en el último momento, el guerrero te traiciona y te apuñala. \nAprendes demasiado tarde que la compasión no siempre es una opción en la guerra.')   # Ruta de Interrogar Nivel 5
+
+            elif decision4 == "matarlo":
                  
                   print('\nSin dudarlo, acabas con su vida.')
                   print('Con el mapa en tus manos, sigues el camino hacia el norte... \nTras horas de viaje, finalmente ves humo en la distancia. \nHas encontrado el campamento enemigo. 🔥 Debes actuar con cuidado.\n')
@@ -39,10 +42,16 @@ if decision1 == "hacha":
 
                   elif decision5 == "observar":
                    print('\nDecides observar antes de actuar... Escuchas que el líder no actuó solo. \nEsto es parte de algo más grande. Te retiras en silencio. \nTu venganza no ha terminado… apenas comienza.')
+                
+                  else:
+                      print('No entiendes esa decisión... el destino de un vikingo debe ser claro. Intenta de nuevo.')
+            else:
+                print('No entiendes esa decisión... el destino de un vikingo debe ser claro. Intenta de nuevo.')
 
         elif decision3 == "ignorar":
-       
              print('\nTe ataca por detrás, y terminas muerto. Tu venganza nunca se cumple. 😔')   
+        else:
+            print('No entiendes esa decisión... el destino de un vikingo debe ser claro. Intenta de nuevo.')     
 
     elif decision2 == "huir":
         print("\nEl miedo se apodera de ti... decides huir y abandonar tu venganza. \nTe alejas de tu aldea sin mirar atrás. \nEl honor de un vikingo se pierde... Tu historia termina aquí.\n")
@@ -52,13 +61,17 @@ if decision1 == "hacha":
         decision22 = input('¿Qué haces? ATACAR AHORA ⚔️, ESPERAR ⏳ o RETIRARTE 🔙?').lower()
          
         if decision22 == "atacar ahora":
-         print('\nSaltas de tu escondite con furia... \nTomas a los enemigos por sorpresa, pero son más de los que pensabas. \nTe rodean rápidamente. \nLuchas con honor, pero caes en combate. \nTu venganza termina aquí."')
+         print('\nSaltas de tu escondite con furia... \nTomas a los enemigos por sorpresa, pero son más de los que pensabas. \nTe rodean rápidamente. \nLuchas con honor, pero caes en combate. \nTu venganza termina aquí.')
 
         elif decision22 == "esperar":
          print('\nDecides esperar pacientemente... \nLos enemigos se dispersan, y logras eliminar a varios de ellos sin ser detectado. \nFinalmente, encuentras al líder enemigo solo. \nCon un golpe certero, lo derrotas. \nHas vengado tu aldea. El Camino al Valhalla te espera. 🛡️')
 
         elif decision22 == "retirarte":
          print('\nDecides que no es el momento adecuado... \nTe retiras sin hacer ruido. \nPero la oportunidad se pierde. \nLa duda te acompañará siempre. \nNunca completaste tu venganza. 😔')
+        else:
+            print('No entiendes esa decisión... el destino de un vikingo debe ser claro. Intenta de nuevo.')
+    else:
+        print('No entiendes esa decisión... el destino de un vikingo debe ser claro. Intenta de nuevo.')     
 
 elif decision1 == "escudo":
    
@@ -84,3 +97,11 @@ elif decision1 == "escudo":
 
                 elif decision1111 == "buscar una entrada secreta":
                     print("\nRodeas la fortaleza en silencio... \nTras explorar un poco, descubres una entrada oculta bajo unas rocas. \nTe adentras en la oscuridad... \npero es una trampa. \nEl suelo cede bajo tus pies. \nCaes en un pozo profundo. \nNadie escucha tu caída. \nTu historia termina en la oscuridad. 😔\n")
+                else:
+                    print('No entiendes esa decisión... el destino de un vikingo debe ser claro. Intenta de nuevo.')
+          else:
+              print('No entiendes esa decisión... el destino de un vikingo debe ser claro. Intenta de nuevo.')
+   else:
+       print('No entiendes esa decisión... el destino de un vikingo debe ser claro. Intenta de nuevo.')
+else:
+    print('No entiendes esa decisión... el destino de un vikingo debe ser claro. Intenta de nuevo.')
