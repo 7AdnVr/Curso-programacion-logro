@@ -66,5 +66,9 @@ hp1 = "Mundo"
 hp3 = hp + " " + hp1
 print(f'{hp3}')
 
+apellidos = ['Messi', 'John', 'William', 'Brown']
+usuarios = ['Pepe', 'bob123', 'wli432', 'marron']
+union = apellidos + usuarios + nombres
 
-
+# Contar cantindad
+print(f'Cantidad de lsita: {len(union)}')
