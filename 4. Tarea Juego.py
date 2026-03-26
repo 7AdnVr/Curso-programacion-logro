@@ -1,4 +1,4 @@
-# Juego: El Camino del Valhalla 🛡️
+# El Camino del Valhalla 🛡️
 print("\n" + "="*30)
 print(" ⚔️  El Camino del Valhalla 🛡️")
 print("="*30 + "\n")
