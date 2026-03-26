@@ -44,3 +44,18 @@ anidacion = [
 print(f'Lista de nombres: {nombres[0]}')
 print(f'Lista de nombres: {nombres[0]}')
 
+#modificar
+
+nombres[2] = 'Messi'
+print(f'Nombres de modificacion {nombres}')
+
+#agregar
+
+nombres.append('frank')
+print(f'Nuevo nombre: {nombres}')
+
+#insertar reemplazar
+nombres.insert('Nancy')
+print(f'nombres despues de insertar un nombre: {nombres}')
+
+
