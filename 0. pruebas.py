@@ -30,7 +30,9 @@ while contador < 100:
     if contador >= 100:
         break
 
-'''
+
+        '''
+
 nombres = ['Alice', 'Bob', 'Charlie', 'David', 'EvE']
 
 anidacion = [
@@ -72,3 +74,15 @@ union = apellidos + usuarios + nombres
 
 # Contar cantindad
 print(f'Cantidad de lsita: {len(union)}')
+
+# Bucle for
+
+for i in nombres:
+    print(f"hola, {i}")
+
+
+# Bucle
+contador = 0 
+while contador < len(apellidos):
+    print(f'hola, {apellidos[contador]}')
+    contador += 1
