@@ -55,7 +55,16 @@ nombres.append('frank')
 print(f'Nuevo nombre: {nombres}')
 
 #insertar reemplazar
-nombres.insert('Nancy')
+nombres.insert(1,'Nancy')
 print(f'nombres despues de insertar un nombre: {nombres}')
+
+#eliminar un nombre
+nombres.pop(3)
+
+hp = "Hola"
+hp1 = "Mundo"
+hp3 = hp + " " + hp1
+print(f'{hp3}')
+
 
 
