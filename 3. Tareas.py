@@ -1,5 +1,5 @@
 # Ejercicio 1
-"""
+
 num = int(input("Ingrese el primer numero: "))
 if num % 2 == 0:
     print(f"El numero {num} es par")
@@ -24,12 +24,15 @@ else:
 
 # Ejercicio 3
 
-edad1 = int(input("Ingrese la edad de la primera persona: "))
-mayor_edad = 18 >=         
+edad10 = int(input("Ingrese la edad: "))
+
+if edad10 >= 18:
+      print(f'Tienes {edad10} eres mayor de edad')
+else:
+      print(f'Tienes {edad10} No eres mayor de edad')
 
 
-"""
-'''
+
 # Ejercicio 4
 compra = float(input(f'Ingrese el monto final de su compra: '))
 descuento = compra * 0.15
@@ -40,19 +43,18 @@ if compra > 1000:
 else:
     print(f'Usted ha pagado el precio regular: {compra}')
 
-# Ejercicio 5
 
-year = int(input(f'Ingrese el año: '))
-
- (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0)
-'''
 # Ejercicio 5
+año = int(input('Ingrese un año: '))
+
+if (año % 4 == 0 and año % 100 != 0) or (año % 400 == 0):
+    print('Es un año bisiesto')
+else:
+    print('No es un año bisiesto')
+
 
 # Ejercicio 6
 
-
-# Ejercicio 7
-'''
 nm = float(input('Ingrese su primer numero a operar: '))
 nm1 = float(input('Ingrese su segundo numero a operar: '))
 
@@ -75,8 +77,28 @@ elif operador == '/':
         print('No se puede dividir sobre cero')
     else:
         print(f'Su division es: {divisi}')
-'''
-'''
+
+# Ejercicio 7
+
+triangulo = int(input(f'Primer lado del triangulo: '))
+triangulo1 = int(input(f'Segundo lado del triangulo: '))
+triangulo2 = int(input(f'Tercero lado del triangulo: '))
+
+
+if triangulo + triangulo1 > triangulo2 and triangulo + triangulo2 > triangulo1 and triangulo1 + triangulo2 > triangulo:
+
+    if triangulo == triangulo1 == triangulo2:
+        print('El triangulo es equilatero')
+
+    elif triangulo == triangulo1 or triangulo == triangulo2 or triangulo1 == triangulo2:
+        print('El triangulo es isosceles')
+
+    else:
+        print('El triangulo es escaleno')
+else:
+    print('No es un triangulo valido')
+
+
 # Ejercicio 8
 
 calificacion = int(input('Ingrese su calificacion: '))
@@ -94,9 +116,9 @@ elif calificacion >= 0 and calificacion <=59:
 else:
     print('Error, no opcion valida')       
      
-'''
 
-'''
+
+
 #Ejercicio 9
 print("\nBienvenido al programa de becas universitarias.")
 
@@ -109,7 +131,7 @@ if (promedio >= 8.5 and ingresos < 2000) and not reportes_disciplinarios:
 
 else:
     print("\nEl estudiante no es elegible para la beca.")
-'''
+
 
 # Ejercicio 10
 
