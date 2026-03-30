@@ -1,4 +1,3 @@
-# 
 print("="*40)
 print('Simulador de Cesta de Compra en Python! 🛒💻')
 print("="*40)
@@ -33,7 +32,6 @@ while usuario != 'renunciar':
     elif usuario == 'mostrar':
         if not nombre:
             print('\nNo tienes nada, agrega algo\n')
-            
         else:
             print('\nLista de compra:')
             for i in range(len(nombre)):
@@ -49,12 +47,14 @@ while usuario != 'renunciar':
                 print(f'{i+1}. {nombre[i]} - ${precio[i]}')
 
             opcion = int(input('Numero del producto que quieres eliminar -> '))
-            indice = opcion - 1
 
-            nombre.pop(indice)
-            precio.pop(indice)
-
-            print('Se ha eliminado correctamente\n')
+            if 1 <= opcion <= len(nombre):
+                indice = opcion - 1
+                nombre.pop(indice)
+                precio.pop(indice)
+                print('Se ha eliminado correctamente\n')
+            else:
+                print('Numero invalido\n')
 
     elif usuario == 'calcular':
         total = 0
