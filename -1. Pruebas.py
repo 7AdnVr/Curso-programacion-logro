@@ -36,13 +36,4 @@ while usuario != 'renunciar':
 
     elif usuario == 'eliminar':
         usuario = input(f'Que desea eliminar de -> ')
-        if usuario == 
-        usuario = input(f'Que desea eliminar de -> ')
-        nombre.remove(usuario)
-        print(f'Se ha eliminado correctamente el producto')
-
-    elif usuario == 'mostrar':
-        print(f'{nombre[0]}{precio[0]}')
-
-    usuario = input(f'Que operacion desea realizar \n🔹 AGREGAR un nuevo elemento ➕ \n🔹 MOSTRAR el contenido de la cesta de la compra 🧺 \n🔹 ELIMINAR un elemento ❌ \n🔹 CALCULAR el total de la compra 💰 \n🔹 RENUNCIAR 👋 para salir del programa \n -> ').lower()
-
+        
