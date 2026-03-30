@@ -42,7 +42,6 @@ print("Ha adinivado el numero")
 
 # Ejercicio 3
 
-usuario10 = input("Ingrese un numero o fin si quiere terminar ->   ").lower()
 
 lista = []
 
@@ -52,8 +51,7 @@ while usuario10 != "fin":
         suma = input('Que numero desea poner -> ')
         lista.append(suma)
     
-    usuario10 = int(input("Ingrese un numero o ""fin"" si quiere terminar ->")).lower()
-
+    usuario10 = int(input("Ingrese un numero o ""fin"" si quiere terminar ->"))
 print("Ha terminado el programa")
 print(f"Este es el promedio de los numero ingresados {lista[0]}")
 
