@@ -13,7 +13,7 @@ opciones = (
 nombre = []
 precio = []
 
-usuario = input('Que operacion desea realizar -> ').lower()
+usuario = input(f'Que operacion desea realizar \n🔹 AGREGAR un nuevo elemento ➕ \n🔹 MOSTRAR el contenido de la cesta de la compra 🧺 \n🔹 ELIMINAR un elemento ❌ \n🔹 CALCULAR el total de la compra 💰 \n🔹 RENUNCIAR 👋 para salir del programa \n -> ').lower()
 
 while usuario != 'renunciar':
 
@@ -62,4 +62,4 @@ while usuario != 'renunciar':
             total += p
         print(f'\nTotal a pagar: ${total}\n')
 
-    usuario = input('Que operacion desea realizar -> ').lower()
+    usuario = input(f'Que operacion desea realizar \n🔹 AGREGAR un nuevo elemento ➕ \n🔹 MOSTRAR el contenido de la cesta de la compra 🧺 \n🔹 ELIMINAR un elemento ❌ \n🔹 CALCULAR el total de la compra 💰 \n🔹 RENUNCIAR 👋 para salir del programa \n -> ').lower()
