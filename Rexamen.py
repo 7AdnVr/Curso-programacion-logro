@@ -68,11 +68,27 @@ print(f"Este es el promedio de los numero ingresados {suma/m}")
 
 # Ejercicio 4
 
+print('Verificador de palíndromos ')
 
-def palabra()
-    
+def palabra(texto):
+
+    texto = texto.lower()
+    texto = texto.replace(" ", "")
+
+    if texto == texto[::-1]:
+        return True
+    else:
+        return False
 
 
+usuario = input('Ingrese una palabra o frase -> ')
+
+resultado = palabra(usuario)
+
+if resultado:
+    print('Es un palindromo')
+else:
+    print('No es un palindromo')
 # Ejercicio 5
 
 
