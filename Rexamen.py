@@ -139,35 +139,39 @@ print(f"La suma de los numeros pares es: {suma}")
 # Ejercicio 7
 
 
-print('Agenda de Contactos Simple 📔')
-
-opciones = (1, 2, 3, 4)
+print('Agenda de Contactos Simple ')
 
 contactos = {}
 
-kj = input('1. Añadir un contacto. \n2. Buscar un contacto. \n3. Listar todos los contactos. \n4. Salir. ')
+while True:
+    kj = input('\n1. Añadir\n2. Buscar\n3. Listar\n4. Salir\n-> ')
 
-while kj != '4':
-
-    if kj not in opciones:
-        print('\nNinguna opcion es valida\n')
-
-    elif kj == '1':
-        ol = input('El nombre y el número de teléfono -> ')
-        contactos.update(ol)
+    if kj == '1':
+        nombre = input('Nombre: ')
+        numero = input('Numero: ')
+        contactos[nombre] = numero
 
     elif kj == '2':
-
-
+        nombre = input('Buscar nombre ->  ')
+        if nombre in contactos:
+            print(contactos[nombre])
+        else:
+            print('No existe el contacto')
 
     elif kj == '3':
         if not contactos:
-            print('\nNo tienes nada, agrega algo\n')
+            print('No hay contactod')
+
         else:
-            print('\nLista de contactos')
-            for i in range(len(contactos)):
-                print(f'{contactos}')
-            print()
+            for nombre, numero in contactos.items():
+                print(nombre, ":", numero)
+
+    elif kj == '4':
+        break
+
+    else:
+        print('Opcion invalida, busca otra opcion')
+
 print('Haz salido correctamente')
 
 
