@@ -37,7 +37,7 @@ while usuario != numero:
     usuario = int(input("Vuelva elegir el numero -> "))
 
 
-print("Ha adinivado el numero")
+print("Has adinivado el numero")
 
 
 # Ejercicio 3
@@ -61,34 +61,47 @@ for m in lista:
 
 
 print("Ha terminado el programa")
-print(f"Este es el promedio de los numero ingresados {suma/m}")
+print(f"Este es el promedio de los numero ingresados {suma/len(lista)}")
 
 
 
 
 # Ejercicio 4
 
-print('Verificador de palíndromos ')
+print('Agenda de Contactos Simple ')
 
-def palabra(texto):
+contactos = {}
 
-    texto = texto.lower()
-    texto = texto.replace(" ", "")
+while True:
+    kj = input('\n1. Añadir\n2. Buscar\n3. Listar\n4. Salir\n-> ')
 
-    if texto == texto[::-1]:
-        return True
+    if kj == '1':
+        nombre = input('Nombre: ')
+        numero = input('Numero: ')
+        contactos[nombre] = numero
+
+    elif kj == '2':
+        nombre = input('Buscar nombre -> ')
+        if nombre in contactos:
+            print(contactos[nombre])
+        else:
+            print('No existe el contactop')
+
+    elif kj == '3':
+        if not contactos:
+            print('No hay contactos')
+        else:
+            for nombre, numero in contactos.items():
+                print(nombre, ":", numero)
+
+    elif kj == '4':
+        break
+
     else:
-        return False
+        print('Opcion invalida')
 
+print('Haz salido correctamente')
 
-usuario = input('Ingrese una palabra o frase -> ')
-
-resultado = palabra(usuario)
-
-if resultado:
-    print('Es un palindromo')
-else:
-    print('No es un palindromo')
 # Ejercicio 5
 
 
@@ -197,5 +210,5 @@ people = int(input('Ingrese un numero -> '))
 multi =  people * '*'
 
 for j in range(people):
-    print(f'{multi}')
+    print('*' * people)
 
