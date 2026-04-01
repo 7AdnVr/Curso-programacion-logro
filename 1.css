@@ -1,0 +1,53 @@
+:root {    --color_fondo: #2D2327
+}
+
+body{
+    background-color: var(--color_fondo);
+}
+
+.container {
+    background-color: antiquewhite;
+    padding: auto;
+    margin: auto;
+}
+
+.container p{
+    color: blueviolet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 100px;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+}
+
+
+
+.container h1{
+    color: blue;
+
+
+}
+
+#btn {
+    background-color: black;
+    color: blanchedalmond;
+    border: solid 2px orange;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+main{
+    background-color: antiquewhite;
+    color: red;
+    padding: 20px;
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: max-content;
+}
