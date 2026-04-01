@@ -23,13 +23,21 @@ body{
 
 }
 
+input:focus {
+  border-color: blue;
+  outline: none; /* Quita el borde por defecto del navegador */
+}
 
 
 .container h1{
     color: blue;
-
-
+    box-shadow: 5px 5px 5px grey;
 }
+
+.container h1:hover{
+    color: aquamarine;
+}
+
 
 #btn {
     background-color: black;
