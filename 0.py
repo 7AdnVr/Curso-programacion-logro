@@ -12,4 +12,3 @@ longitud = 2 * math.pi * radio
 
 print(f"el area es {area:.2f} y su longittud es {longitud:.2f}")
 '''
-v2
