@@ -96,7 +96,20 @@ textarea {
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+.social-links {
+  display: inline-flex;
+  column-gap: 1.25rem;
+}
 
+.social-link {
+  color: var(--title-color);
+  font-size: var(--h3-font-size);
+  transition: color 0.7s var(--transition);
+}
+
+.social-link:hover {
+  color: var(--first-color);
+}
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 1320px;
@@ -149,23 +162,23 @@ textarea {
 }
 
 .nav-toggle {
-  background-color: var(--first-color);
   width: 28px;
   height: 28px;
   position: relative;
 }
 
-.nav-toggle::before
+.nav-toggle::before,
 .nav-toggle::after {
   content: '';
   width: 100%;
   height: 2px;
   background-color: var(--title-color);
-  position: relative;
+  position: absolute;
   left: 0;
+  transition: all 0.7s var(--transition);
 }
 
-.nav-toggle::before{
+.nav-toggle::before {
   top: 7px;
 }
 
@@ -176,11 +189,12 @@ textarea {
 .nav-menu {
   position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   background-color: var(--container-color);
   width: 512px;
   height: 100%;
-  padding: 9rem 0 0 9.rem;
+  padding: 9rem 0 0 9rem;
+  transition: right 1s var(--transition);
 }
 
 .nav-list {
@@ -195,16 +209,31 @@ textarea {
   font-size: var(--larger-font-size);
   transition: color 0.3s var(--transition);
 }
-.nav-link:hover
+.nav-link:hover {
+  color: var(--first-color);
+}
 
 
 /* Show menu */
+.show-menu {
+  right: 0;
+}
 
+.animate-toggle::before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.animate-toggle::after {
+  top: 50%;
+  transform: rotate(-45deg);
+}
 /* Active link */
 
 /* Change background header */
 
 /*=============== MAIN ===============*/
+
 
 /*=============== HOME ===============*/
 
