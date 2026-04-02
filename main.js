@@ -60,7 +60,7 @@ colors.forEach((color) => {
 let currentTheme = 'light';
 document.body.className = currentTheme;
 
-document.querySelectorAll('input[name="body=theme"]').forEach((input) => {
+document.querySelectorAll('input[name="body-theme"]').forEach((input) => {
     input.addEventListener('change', () => {
         currentTheme = input.value;
         document.body.className = currentTheme;
