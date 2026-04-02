@@ -27,8 +27,15 @@ navToggle.addEventListener('click', () => {
 /*=============== EMAIL JS ===============*/
 
 /*=============== STYLE SWITCHER ===============*/
+const styleSwitcher = document.getElementById('style-switcher'),
+    switcherToggle = document.getElementById('switcher-toggle'),
+    switcherClose = document.getElementById('switcher-close');
+
 
 /* Switcher show */
+switcherToggle.addEventListener('click', () => {
+    styleSwitcher.classList.add('show-switcher');
+})
 
 /* Switcher hidden */
 
