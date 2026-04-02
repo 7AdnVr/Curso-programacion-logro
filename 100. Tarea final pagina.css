@@ -438,7 +438,7 @@ textarea {
 .home-link::before {
   content: '';
   position: absolute;
-  left: -124%;
+  left: -70%;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
