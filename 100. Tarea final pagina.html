@@ -136,7 +136,7 @@
                 </div>
                 <div class="home-btns">
                     <a download="" href="perro.jpg" class="btn">
-                        Download CV
+                        Descargar CV
                     </a>
 
                     <a href="#" class="home-link">Mis habilidades</a>
@@ -328,16 +328,118 @@
 
             <div class="container">
                 <ul class="work-list">
-                    <li class="work-item active-work">Todo</li>
-                    <li class="work-item">Web</li>
-                    <li class="work-item">Practica</li>
-                    <li class="work-item">Ideas</li>
+                    <li class="work-item active-work" data-filter="todo">Todo</li>
+                    <li class="work-item" data-filter=".web">Web</li>
+                    <li class="work-item" data-filter=".practica">Practica</li>
+                    <li class="work-item" data-filter=".ideas">Ideas</li>
                 </ul>
 
                 <div class="work-container grid">
-                    <div class="mix">
+                    <div class="mix ideas">
                         <div class="card">
                             <img src="" alt="" class="work-img">
+
+                            <h4 class="work-category">Web</h4>
+                            <h3 class="work-title">Funciona (no preguntes como)</h3>
+
+                            <p class="work-description">
+                                Programador con experiencia en hacer que el código funcione después de varios intentos. 
+                                Especialista en errores raros y soluciones sacadas de internet. En constante mejora (obligado).
+                            </p>
+
+                            <a href="" class="link"
+                                >Ver Precios <i class="ri-arrow-right-line link-icon"></i
+                            ></a>
+                        </div>
+                    </div>
+                    
+                    <div class="mix practica">
+                        <div class="card">
+                            <img src="" alt="" class="work-img">
+
+                            <h4 class="work-category">Practica</h4>
+                            <h3 class="work-title">Copiado pero entendí algo</h3>
+
+                            <p class="work-description">
+                                Programador con experiencia en hacer que el código funcione después de varios intentos. 
+                                Especialista en errores raros y soluciones sacadas de internet. En constante mejora (obligado).
+                            </p>
+
+                            <a href="" class="link"
+                                >Ver Precios <i class="ri-arrow-right-line link-icon"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="mix web">
+                        <div class="card">
+                            <img src="" alt="" class="work-img">
+
+                            <h4 class="work-category">Ideas</h4>
+                            <h3 class="work-title">App que me hara rico</h3>
+
+                            <p class="work-description">
+                                Programador con experiencia en hacer que el código funcione después de varios intentos. 
+                                Especialista en errores raros y soluciones sacadas de internet. En constante mejora (obligado).
+                            </p>
+
+                            <a href="" class="link"
+                                >Ver Precios <i class="ri-arrow-right-line link-icon"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="mix web">
+                        <div class="card">
+                            <img src="" alt="" class="work-img">
+
+                            <h4 class="work-category">Web</h4>
+                            <h3 class="work-title">Portafolio versión 1</h3>
+
+                            <p class="work-description">
+                                Programador con experiencia en hacer que el código funcione después de varios intentos. 
+                                Especialista en errores raros y soluciones sacadas de internet. En constante mejora (obligado).
+                            </p>
+
+                            <a href="" class="link"
+                                >Ver Precios <i class="ri-arrow-right-line link-icon"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="mix practica">
+                        <div class="card">
+                            <img src="" alt="" class="work-img">
+
+                            <h4 class="work-category">Practica</h4>
+                            <h3 class="work-title">Error → Google → Solución</h3>
+
+                            <p class="work-description">
+                                Programador con experiencia en hacer que el código funcione después de varios intentos. 
+                                Especialista en errores raros y soluciones sacadas de internet. En constante mejora (obligado).
+                            </p>
+
+                            <a href="" class="link"
+                                >Ver Precios <i class="ri-arrow-right-line link-icon"></i
+                            ></a>
+                        </div>
+                    </div>
+
+                    <div class="mix ideas">
+                        <div class="card">
+                            <img src="" alt="" class="work-img">
+
+                            <h4 class="work-category">Ideas</h4>
+                            <h3 class="work-title">Lo termino mañana</h3>
+
+                            <p class="work-description">
+                                Programador con experiencia en hacer que el código funcione después de varios intentos. 
+                                Especialista en errores raros y soluciones sacadas de internet. En constante mejora (obligado).
+                            </p>
+
+                            <a href="" class="link"
+                                >Ver Precios <i class="ri-arrow-right-line link-icon"></i
+                            ></a>
                         </div>
                     </div>
                 </div>
@@ -410,7 +512,7 @@
                     id="dark-theme"
                     />
 
-                    <label for="dark-theme" class="style-switcher-laber">Dark</label>
+                    <label for="dark-theme" class="style-switcher-label">Dark</label>
                 </div>
             </div>
         </div>
@@ -424,6 +526,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 
     <!--=============== MIXITUP ===============-->
+    <script src="mixitup.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
 

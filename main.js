@@ -33,6 +33,14 @@ var servicesSwiper = new Swiper('.services-swiper', {
 });
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
+var mixer = mixitup('.work-container', {
+    selectors: {
+        target: '.mix'
+    },
+    animation: {
+        duration: 300
+    }
+});
 
 /* Active work */
 
