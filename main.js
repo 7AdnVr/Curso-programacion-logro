@@ -43,6 +43,17 @@ var mixer = mixitup('.work-container', {
 });
 
 /* Active work */
+const linkWork = document.querySelectorAll('.work-item');
+
+function activeWork() {
+    linkWork.forEach((a) => {
+        a.classList.remove('active-work');
+    });
+
+    this.classList.add('active-work');
+}
+
+linkWork.forEach((a) => a.addEventListener('click', activeWork));
 
 /*=============== RESUME ===============*/
 
