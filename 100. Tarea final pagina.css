@@ -565,7 +565,7 @@ textarea {
 
 .skills-header,
 .skills-description {
-  padding-inline: 1.75;
+  padding-inline: 1.75rem;
 }
 
 .skills-name {
@@ -733,6 +733,33 @@ textarea {
   display: grid;
   place-items: center;
   z-index: 10;
+}
+
+.resume-content {
+  height: 0;
+  overflow: hidden;  
+}
+
+.resume-content-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.25rem 2rem;
+}
+
+.resume-content-title {
+  font-size: var(--h3-font-size);
+}
+
+.resume-date {
+  color: var(--title-color);
+  font-size: var(--smaller-font-size);
+  font-weight: var(--font-bold);
+}
+
+.resume-description {
+  margin-block: 1.25rem 2rem;
 }
 
 /*=============== TESTIMONIALS ===============*/
