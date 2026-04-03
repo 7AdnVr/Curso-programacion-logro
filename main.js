@@ -26,7 +26,7 @@ var servicesSwiper = new Swiper('.services-swiper', {
         768: {
           slidesPerView: 2,
         },
-        1208: {
+        1200: {
           slidesPerView: 3,
         },
     }
