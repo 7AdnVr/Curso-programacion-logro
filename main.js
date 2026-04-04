@@ -39,7 +39,7 @@ const scrollActive = () => {
 
     sections.forEach((current) => {
         const sectionHeight = current.offsetheight,
-        sectionTop = current.offsetTop,
+        sectionTop = current.offsetTop - 58,
         sectionId = current.getAttribute('id')
         sectionsClass = document.querySelector('.nav-menu a[href*=' + sectionId + ']')
 
@@ -51,7 +51,7 @@ const scrollActive = () => {
     })
 };
 
-window.addEventListener('load', scrollActive)
+window.addEventListener('scroll', scrollActive)
 
 /*=============== SERVICES SWIPER ===============*/
 var servicesSwiper = new Swiper('.services-swiper', {
