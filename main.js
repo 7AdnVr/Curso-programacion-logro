@@ -32,6 +32,26 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () => {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach((current) => {
+        const sectionHeight = current.offsetheight,
+        sectionTop = current.offsetTop,
+        sectionId = current.getAttribute('id')
+        sectionsClass = document.querySelector('.nav-menu a[href*=' + sectionId + ']')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            sectionsClass.classList.add('action-link')
+        } else {
+            sectionsClass.classList.remove('action-link')
+        }
+    })
+};
+
+window.addEventListener('load', scrollActive)
 
 /*=============== SERVICES SWIPER ===============*/
 var servicesSwiper = new Swiper('.services-swiper', {
