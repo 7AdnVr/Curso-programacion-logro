@@ -801,6 +801,7 @@ textarea {
 .contact-container {
   grid-template-columns: 5fr 7fr;
   column-gap: 1.5rem;
+  position: relative;
 }
 
 .contact-card {
@@ -845,6 +846,7 @@ textarea {
 
 .contact-form {
   row-gap: 1.75rem;
+  position: relative;
 }
 
 .contact-form-group {

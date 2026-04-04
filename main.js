@@ -101,7 +101,7 @@ var servicesSwiper = new Swiper('.testimonials-swiper', {
 const contactForm = document.getElementById('contact-form'),
     contactName = document.getElementById('contact-name'),
     contactEmail = document.getElementById('contact-email'),
-    contactSubject = document.getElementById('Contact-subject')
+    contactSubject = document.getElementById('contact-subject'),
     contactMessage = document.getElementById('contact-message'),
     message = document.getElementById('message');
 
@@ -109,9 +109,11 @@ const contactForm = document.getElementById('contact-form'),
         e.preventDefault();
 
         if(contactName.value === '' || contactEmail.value === '' || contactSubject.value === '' || 
-        contactMessage.value === ''){
-            message.classList.add('color-red');
-            message.textContent = 'Escriba todos los campos de entrada.';
+        contactMessage.value === ''
+    )   {
+        message.classList.remove('color-first');
+        message.classList.add('color-red');
+        message.textContent = 'Escriba todos los campos de entrada.';
 
         setTimeout(() => {
             message.textContent = '';
@@ -134,11 +136,17 @@ const contactForm = document.getElementById('contact-form'),
                     }, 5000);
                 },
                 (error) => {
-                    console.log('FAILED...', error);
+                    alert('¡UPS! ALGO SALIÓ MAL...', error);
                 },
             );
+        contactName.value = '';
+        contactEmail.value = '';
+        contactSubject.value = '';
+        contactMessage.value = '';
     }
 };
+
+contactForm.addEventListener('submit', sendEmail);
 
 /*=============== STYLE SWITCHER ===============*/
 const styleSwitcher = document.getElementById('style-switcher'),
