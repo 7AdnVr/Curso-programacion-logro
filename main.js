@@ -98,6 +98,21 @@ var servicesSwiper = new Swiper('.testimonials-swiper', {
 });
 
 /*=============== EMAIL JS ===============*/
+const contactForm = document.getElementById('contact-form'),
+    contactName = document.getElementById('contact-name'),
+    contactEmail = document.getElementById('contact-email'),
+    contactSubject = document.getElementById('Contact-subject')
+    contactMessage = document.getElementById('contact-message'),
+    message = document.getElementById('message');
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        if(contactName.value === '' || contactEmail.value === '' || contactSubject.value === '' || 
+        contactMessage.value === ''){
+            message.classList.add('color-red');
+        }
+    };
 
 /*=============== STYLE SWITCHER ===============*/
 const styleSwitcher = document.getElementById('style-switcher'),
