@@ -3,19 +3,19 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --hue: 210; /* azul base */
-
-  --first-color: hsl(var(--hue), 80%, 40%);
-  --title-color: hsl(var(--hue), 40%, 15%);
-  --text-color: hsl(var(--hue), 20%, 25%);
+  /*========== Colors ==========*/
+  --hue: 165;
+  --first-color: hsl(var(--hue), 60%, 40%);
+  --title-color: hsl(var(--hue), 4%, 12%);
+  --text-color: hsl(var(--hue), 4%, 20%);
   --body-color: hsl(var(--hue), 30%, 92%);
   --container-color: hsl(0, 0%, 100%);
-  --border-color: hsl(340, 80%, 35%); /* rojo Barça */
-  --white-color: #fff;
+  --border-color: hsl(var(--hue), 4%, 16%);
+  --white-color: hsl(0, 0%, 100%);
   --shadow-color: hsla(var(--hue), 80%, 10%, 0.2);
 
   /*========== Font family ==========*/
-  --body-font: 'Jost', sans-serif;
+  --body-font: 'Poppins', sans-serif;
   --second-font: 'Montserrat Alternates', sans-serif;
 
   /*========== Font sizes ==========*/
@@ -55,11 +55,12 @@
 
 /*=============== DARK THEME ===============*/
 .dark {
-  --body-color: hsl(var(--hue), 30%, 10%);
-  --container-color: hsl(var(--hue), 25%, 15%);
-  --title-color: hsl(0, 0%, 95%);
-  --text-color: hsl(0, 0%, 80%);
-  --border-color: hsl(340, 80%, 50%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 92%);
+  --body-color: hsl(var(--hue), 10%, 8%);
+  --container-color: hsl(var(--hue), 10%, 16%);
+  --border-color: hsl(var(--hue), 4%, 65%);
+  --shadow-color: hsla(var(--hue), 0%, 100%, 0.2);
 }
 
 .dark .shape {
@@ -1100,6 +1101,8 @@ textarea {
 .style-switcher-themes,
 .style-switcher-theme {
   display: flex;
+  row-gap: 1rem;
+  column-gap: 0.75rem;
 }
 
 .style-switcher {
