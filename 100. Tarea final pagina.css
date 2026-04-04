@@ -123,7 +123,7 @@ textarea {
 }
 
 .section {
-  padding-block: 7rem;
+  padding-block: 7rem 3.5rem;
 }
 
 .btn,
@@ -169,7 +169,7 @@ textarea {
 .section-title {
   font-size: var(--h1-font-size);
   text-align: center;
-  margin-bottom: 4.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .section-title::after {
@@ -198,11 +198,68 @@ textarea {
   transform: translateX(-0.5rem);
 }
 
+.section-deco {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--border-color);
+}
+
+.deco-left {
+  left: -72px;
+}
+
+.deco-right {
+  right: -72px;
+}
+
+.section-deco::before,
+.section-deco::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  box-shadow: 4px 4px var(--shadow-color);
+}
+
+.section-deco::before {
+  top: 0;
+  transform: translate(-50%, -100%);
+}
+
+.section-deco::after {
+  top: 0;
+  transform: translate(-50%, -100%);
+}
+
+.section-deco .shape {
+  max-width: 226px;
+  height: 226px;
+  bottom: -206px;
+}
+
+.deco-left .shape {
+  left: -166px;
+}
+
+.deco-right .shape {
+  left: -166px;
+}
+
 /*=============== LAYOUT ===============*/
 .container {
   max-width: 1320px;
   margin-inline: auto;
   padding-inline: 1.5rem;
+}
+
+.container:not(.nav, .home-container) {
+  padding-block: 3.75rem;
 }
 
 .grid {
