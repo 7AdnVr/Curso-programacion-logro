@@ -892,6 +892,14 @@ textarea {
   font-weight: var(--font-medium);
 }
 
+.color-red {
+  color: hsl(5, 69%, 51%);
+}
+
+.color-first {
+  color: var(--first-color);
+}
+
 /*=============== FOOTER ===============*/
 
 /*=============== STYLE SWITCHER ===============*/

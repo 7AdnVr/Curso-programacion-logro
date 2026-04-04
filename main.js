@@ -111,8 +111,34 @@ const contactForm = document.getElementById('contact-form'),
         if(contactName.value === '' || contactEmail.value === '' || contactSubject.value === '' || 
         contactMessage.value === ''){
             message.classList.add('color-red');
-        }
-    };
+            message.textContent = 'Escriba todos los campos de entrada.';
+
+        setTimeout(() => {
+            message.textContent = '';
+        }, 3000);
+    }   else {
+        emailjs
+            .sendForm(
+                'service_hq1mzbo', 
+                'template_4kbtevp', 
+                '#contact-form', 
+                'fRznfCwfO07M-lHE1'
+            )
+            .then(
+                () => {
+                    message.classList.add('color-first');
+                    message.textContent = 'Mensaje enviado ✔';
+
+                    setTimeout(() => {
+                        message.textContent = '';
+                    }, 5000);
+                },
+                (error) => {
+                    console.log('FAILED...', error);
+                },
+            );
+    }
+};
 
 /*=============== STYLE SWITCHER ===============*/
 const styleSwitcher = document.getElementById('style-switcher'),
