@@ -41,6 +41,16 @@
 
 /* Responsive typography */
 @media screen and (max-width: 1024px) {
+  :root {
+  --big-font-size: 3rem;
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --larger-font-size: 1.125rem;
+  --large-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.812rem;
+  }
 }
 
 /*=============== DARK THEME ===============*/
@@ -1174,20 +1184,164 @@ textarea {
   .testimonials-swiper {
     max-width: 900px;
   }
+
+  .swiper-pagination-bullet::before {
+    width: 90px;
+  }
+
+  .work-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 
 
 @media screen and (max-width: 1024px) {
+  .nav {
+    height: 4rem;
+  }
+
+  .section {
+    padding-block: 6rem 1rem;
+  }
+
+  .home-container {
+    padding-block: 2rem;
+  }
+
+  .home-title {
+    text-shadow: 2px 2px var(--shadow-color);
+  }
+
+  .home-data {
+    transform: scale(0.8);
+  }
+
+  .swiper-pagination-bullet::before {
+    top: 11.5px;
+  }
+
+  .resume-container {
+    grid-template-columns: fit-content(550px);
+    justify-content: center;
+    row-gap: 2.5rem;
+  }
+
+  .contact-container,
+  .contact-form-group {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container {
+    row-gap: 1.5rem;
+  }
+
+  .container-form,
+  .container-contect {
+    max-width: 550px;
+    width: 100%;
+    margin-inline: auto;
+  }
 }
 
 /* For medium devices */
 @media screen and (max-width: 768px) {
+  .nav-menu,
+  .style-switcher {
+    width: 100%;
+  }
+
+  .nav-buttons {
+    column-gap: 1.5rem;
+  }
+
+  .home-data {
+    transform: scale(0.7);
+  }
+
+  .services-swiper,
+  .testimonials-swiper {
+    max-width: 420px;
+  }
+
+  .swiper-pagination-bullet::before {
+    width: 120px;
+  }
+
+  .skills-container {
+    grid-template-columns: fit-content(550px);
+  }
+
+  .skills-container,
+  .work-container {
+    justify-content: center;
+  }
+
+  .work-list {
+    column-gap: 2rem;
+  }
+
+  .work-container {
+    grid-template-columns: fit-content(420px);
+  }
+
+  .footer-container {
+    flex-direction: column;
+    row-gap: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .container {
+    padding-inline: 1.25rem;
+  }
+
+  .nav-buttons {
+    column-gap: 1.25rem;
+  }
+
+  .nav-menu {
+    padding-left: 7rem;
+  }
+
+  .header-deco {
+    left: 56px;
+  }
+
+  .home-data {
+    transform: scale(0.6);
+  }
+
+  .skills-container {
+    row-gap: 3rem;
+  }
 }
 
 /* For small devices */
 @media screen and (max-width: 400px) {
+  .nav-menu {
+    padding-left: 6rem;
+  }
+
+  .header-deco {
+    left: 40px;
+  }
+
+  .home-banner,
+  .home-img-wrapper {
+    width: 100%;
+  }
+
+  .home-data {
+    transform: scale(0.5);
+  }
+
+  .card {
+    padding-inline: 2rem;
+  }
+
+  .skills-header,
+  .skills-description {
+    padding-inline: 1.25rem;
+  }
 }
