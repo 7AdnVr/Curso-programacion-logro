@@ -236,8 +236,8 @@ textarea {
 }
 
 .section-deco::after {
-  top: 0;
-  transform: translate(-50%, -100%);
+  bottom: 0%;
+  transform: translate(-50%, 100%);
 }
 
 .section-deco .shape {
