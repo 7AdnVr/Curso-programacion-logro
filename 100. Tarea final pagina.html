@@ -740,7 +740,8 @@
                                 >Tu nombre (para saber quién me escribe) <b>*</b></label
                             >
                             <input 
-                                type="name" 
+                                type="text" 
+                                name="name"
                                 class="contact-form-input" 
                                 id="contact-name"
                             />
@@ -763,7 +764,8 @@
                                 >¿Qué necesitas? (no prometo magia, pero intento) <b>*</b></label
                             >
                             <input 
-                                type="subject" 
+                                type="text"
+                                name="subject"
                                 class="contact-form-input" 
                                 id="contact-subject"
                             />
@@ -774,7 +776,7 @@
                                 >Escribe aquí (no juzgo… mucho) <b>*</b></label
                             >
                             <textarea
-                                type="message" 
+                                name="message"
                                 class="contact-form-input contact-form-area" 
                                 id="contact-message"
                             ></textarea>
@@ -869,7 +871,7 @@
     <!--=============== EMAIL JS ===============-->
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
+    </script>
 
     <!--=============== JS ===============-->
     <script src="main.js"></script>
