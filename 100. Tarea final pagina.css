@@ -737,7 +737,8 @@ textarea {
 
 .resume-content {
   height: 0;
-  overflow: hidden;  
+  overflow: hidden;
+  transition: height 0.3s var(--transition);
 }
 
 .resume-content-header {
@@ -763,6 +764,34 @@ textarea {
 }
 
 /*=============== TESTIMONIALS ===============*/
+.testimonial-icon {
+  position: absolute;
+  top: 2rem;
+  left: 2.15rem;
+  width: 66px;
+  height: 66px;
+  background-color: var(--container-color);
+  border-bottom-right-radius: 1rem;
+  color: var(--first-color);
+  font-size: 2.5rem;
+}
+
+.testimonial-img {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-description {
+  min-height: 110px;
+}
+
+.testimonial-name {
+  font-size: var(--larger-font-size);
+  margin-block: 2rem 0.25rem;
+}
 
 /*=============== CONTACT ===============*/
 
