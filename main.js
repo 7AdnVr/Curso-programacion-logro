@@ -105,12 +105,11 @@ const contactForm = document.getElementById('contact-form'),
     contactMessage = document.getElementById('contact-message'),
     message = document.getElementById('message');
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+const sendEmail = (e) => {
+    e.preventDefault();
 
-        if(contactName.value === '' || contactEmail.value === '' || contactSubject.value === '' || 
-        contactMessage.value === ''
-    )   {
+    if(contactName.value === '' || contactEmail.value === '' || contactSubject.value === '' || contactMessage.value === '') {
+
         message.classList.remove('color-first');
         message.classList.add('color-red');
         message.textContent = 'Escriba todos los campos de entrada.';
@@ -118,27 +117,27 @@ const contactForm = document.getElementById('contact-form'),
         setTimeout(() => {
             message.textContent = '';
         }, 3000);
-    }   else {
-        emailjs
-            .sendForm(
-                'service_hq1mzbo', 
-                'template_4kbtevp', 
-                '#contact-form', 
-                'fRznfCwfO07M-lHE1'
-            )
-            .then(
-                () => {
-                    message.classList.add('color-first');
-                    message.textContent = 'Mensaje enviado ✔';
 
-                    setTimeout(() => {
-                        message.textContent = '';
-                    }, 5000);
-                },
-                (error) => {
-                    alert('¡UPS! ALGO SALIÓ MAL...', error);
-                },
-            );
+    } else {
+        emailjs.sendForm(
+            'service_hq1mzbo', 
+            'template_4kbtevp', 
+            '#contact-form', 
+            'fRznfCwfO07M-lHE1'
+        )
+        .then(() => {
+            message.classList.add('color-first');
+            message.textContent = 'Mensaje enviado ✔';
+
+            setTimeout(() => {
+                message.textContent = '';
+            }, 5000);
+        })
+        .catch((error) => {
+            alert('¡UPS! ALGO SALIÓ MAL...');
+            console.error(error);
+        });
+
         contactName.value = '';
         contactEmail.value = '';
         contactSubject.value = '';
@@ -146,6 +145,7 @@ const contactForm = document.getElementById('contact-form'),
     }
 };
 
+contactForm.addEventListener('submit', sendEmail);
 contactForm.addEventListener('submit', sendEmail);
 
 /*=============== STYLE SWITCHER ===============*/
