@@ -3,6 +3,7 @@ h1, h2, h3 {
 }
 
 #menu-principal a {
+    list-style: none;
     text-decoration: none;
     color: black;
 }
