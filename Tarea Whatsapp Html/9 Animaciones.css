@@ -5,4 +5,5 @@
 
 .load {
   animation: spin 2s linear infinite;
+  display: inline-block;
 }
