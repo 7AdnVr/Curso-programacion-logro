@@ -1,0 +1,13 @@
+input {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+button {
+  background: blue;
+  color: white;
+}
+
+button:hover {
+  background: red;
+}
