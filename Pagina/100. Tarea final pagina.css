@@ -1,10 +1,12 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Montserrat+Alternates:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
-  --hue: 165;
+  --hue: 220;
+  --second-hue: 350;
+  --second-color: hsl(var(--second-hue), 80%, 50%);
   --first-color: hsl(var(--hue), 60%, 40%);
   --title-color: hsl(var(--hue), 4%, 12%);
   --text-color: hsl(var(--hue), 4%, 20%);
@@ -13,10 +15,11 @@
   --border-color: hsl(var(--hue), 4%, 16%);
   --white-color: hsl(0, 0%, 100%);
   --shadow-color: hsla(var(--hue), 80%, 10%, 0.2);
+  
 
   /*========== Font family ==========*/
-  --body-font: 'Poppins', sans-serif;
-  --second-font: 'Montserrat Alternates', sans-serif;
+  --body-font: 'Jost', sans-serif;
+  --second-font: 'Montserrat', sans-serif;
 
   /*========== Font sizes ==========*/
   --big-font-size: 5.5rem;
@@ -37,6 +40,11 @@
 
   /*========== Transition ==========*/
   --transition: cubic-bezier(0.3, 0, 0.3, 1);
+}
+
+[data-theme="barca"] {
+  --hue: 220;
+  --second-hue: 350;
 }
 
 /* Responsive typography */
@@ -483,8 +491,12 @@ textarea {
 
 .home-img-wrapper {
   width: clamp(21rem, 12.6rem + 33.6vw, 42rem);
-  border-radius: 0 0 100vw 100vw;
-  overflow: hidden;
+  height: 550px;
+  overflow: visible;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .home-img-wrapper::before {
@@ -501,6 +513,8 @@ textarea {
   z-index: 10;
   aspect-ratio: 21/25;
   object-fit: cover;
+  width: 72%;
+  top: -70px;
 }
 
 .home-data {
@@ -637,7 +651,7 @@ textarea {
 .swiper-pagination-bullets::before {
   content: '';
   position: absolute;
-  top: 0.75rem;
+  top: 0.57rem;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
