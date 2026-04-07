@@ -19,13 +19,25 @@ VALUES
 (4, 'Silla', 150, 15, 'Muebles'),
 (5, 'Escritorio', 300, 5, 'Muebles');
 
-UPDATE Customers
-SET country = 'España'
-WHERE customer_id = 4 OR first_name = 'Juan';
-
-DELETE FROM Shippings
-WHERE status = 'Delivered' and shipping_id > 200;
+SELECT *
+FROM Customers
+WHERE age > 30
+AND country != 'Mexico'
+AND country != 'Colombia';
 
 SELECT name, price, stock
 FROM Products
 ORDER BY stock DESC, price ASC;
+
+SELECT SUM(amount)
+FROM Orders
+WHERE amount >= 2;
+
+SELECT MAX(age), MIN(age)
+FROM Customers;
+
+SELECT COUNT(*)
+FROM Orders
+WHERE customer_id = 1
+OR customer_id = 3
+OR customer_id = 5;
