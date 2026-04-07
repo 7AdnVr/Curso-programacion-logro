@@ -18,3 +18,14 @@ VALUES
 (3, 'Teclado', 45, 30, 'Electronicos'),
 (4, 'Silla', 150, 15, 'Muebles'),
 (5, 'Escritorio', 300, 5, 'Muebles');
+
+UPDATE Customers
+SET country = 'España'
+WHERE customer_id = 4 OR first_name = 'Juan';
+
+DELETE FROM Shippings
+WHERE status = 'Delivered' and shipping_id > 200;
+
+SELECT name, price, stock
+FROM Products
+ORDER BY stock DESC, price ASC;
